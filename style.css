@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body, .body2, .body3 {
+    font-family: "League Spartan", serif;
+    background-color: #3A4663;
+    padding: 3rem 2.4rem;
+    min-height: 100vh; 
+    transition: 0.2s;
+}
+
+.body2 {
+    background-color: #E6E6E6;
+}
+
+.body3 {
+    background-color: #17062A;                             
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.logo, .logo2, .logo3 {
+    color: #FFF;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.533px;
+}
+
+.logo2, .theme-text2, .theme2, .result2 {
+    color: #36362C !important;
+}
+
+.logo3, .theme-text3, .theme3, .result3, .dial3  {
+     color: #FFE53D !important;
+}
+
+.theme-text, .theme-text2, .theme-text3 {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.theme-div {
+    display: flex;
+    align-items: end;
+    gap: 2.6rem;
+}
+
+.theme, .theme2, .theme3 {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.rectangle, .rectangle2, .rectangle3 {
+    width: 7.1rem;
+    height: 2.6rem;
+    background-color: #242D44;
+    border-radius: 3.5rem;
+    position: relative;
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+
+.rectangle2 {
+    background-color: #D2CDCD;
+}
+
+.rectangle3 {
+    background-color: #1E0936;
+}
+
+
+.circle {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background-color: #D03F2F;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.5rem;
+    transition: 0.2s;
+}
+
+.circle2 {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background-color: #C85402 ;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2.8rem;
+    transition: 0.2s;
+}
+
+.circle3 {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background-color: #00DED0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5rem;
+    transition: 0.2s;
+}
+
+.theme-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+} 
+
+main {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.result, .result2, .result3 {
+    width: 100%;
+    height: 8.8rem;
+    background-color: #181F33;
+    border-radius: 1rem;
+    color: #FFF;
+    text-align: right;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.667px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 2.9rem 2.4rem;
+    transition: 0.2s;
+}
+
+.result2 {
+    background-color: #EEEEEE !important;
+}
+
+.result3 {
+    background-color:  #1E0936 !important;
+}
+
+
+.container, .container2, .container3 {
+    background-color: #242D44;
+    padding: 2.4rem;
+    display: grid;
+    grid-template-columns: 6rem 6rem 6rem 6rem;
+    grid-template-rows: 6.4rem 6.4rem 6.4rem 6.4rem 6.4rem;
+    gap: 1.3rem;
+    justify-content: center;
+    transition: 0.2s;
+    border-radius: 1rem;
+}
+
+.container2 {
+    background-color: #D2CDCD !important;
+}
+
+.container3 {
+    background-color: #1E0936 !important;
+}
+
+.reset-button, .reset-button2, .reset-button3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.reset-button, .delete-button {
+    background-color: #647198;
+    color: #FFF !important;
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.333px;
+    box-shadow: 0px -4px 0px 0px #414E73 inset !important;
+    font-size: 2rem !important;
+}
+
+.reset-button2, .delete-button2 {
+    background-color: #378187;
+    color: #FFF !important;
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.333px;
+    box-shadow: 0px -4px 0px 0px #1B6066  inset !important;
+    font-size: 2rem !important;
+}
+
+.reset-button3, .delete-button3 {
+    background-color: #56077C;
+    color: #FFF !important;
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.333px;
+    box-shadow: 0px -4px 0px 0px #BE15F4  inset !important;
+    font-size: 2rem !important;
+}
+
+.equal-button {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: #D03F2F;
+    color: #FFF !important;
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.333px;
+    box-shadow: 0px -4px 0px 0px #93261A inset !important;
+    transition: 0.2s;
+}
+
+.equal-button2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: #C85402;
+    color: #FFF !important;
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.333px;
+    box-shadow: 0px -4px 0px 0px #873901 inset !important;
+    transition: 0.2s;
+}
+
+.equal-button3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: #00DED0 ;
+    color: #1A2327 !important;
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.333px;
+    box-shadow: 0px -4px 0px 0px #6CF9F1 inset !important;
+    transition: 0.2s;
+}
+
+    button, .dial {
+    background-color: #EAE3DC;
+    border-radius: 1rem;
+    font-size: 2rem;
+    box-shadow: 0px -4px 0px 0px #B3A497 inset;
+    color: #434A59;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.533px;
+    border: none;
+    transition: 0.2s;
+}
+
+.dial3 {
+    background-color: #331C4D;
+    box-shadow: 0px -4px 0px 0px #881C9E inset;
+}
+
+.dial3:hover {
+    background-color: #6C34AC !important;
+}
+
+.container button:hover {
+    cursor: pointer;
+    background-color: #FFFFFE;
+    transition: 0.2s;
+}
+
+.container2 button:hover {
+    cursor: pointer;
+    background-color: #FFFFFE;
+    transition: 0.2s;
+}
+
+.container3 button:hover {
+    cursor: pointer;
+    background-color: #FFFFFE;
+    transition: 0.2s;
+}
+
+.delete-button:hover {
+    background-color: #A2B2E1 !important;
+}
+
+.delete-button2:hover {
+    background-color: #62B5BC !important;
+}
+
+.delete-button3:hover {
+    background-color: #8631AF !important;
+}
+
+.reset-button:hover {
+    background-color: #A2B2E1 !important;
+}
+
+.reset-button2:hover {
+    background-color: #62B5BC !important;
+}
+
+.reset-button3:hover {
+    background-color: #8631AF !important;
+}
+
+.equal-button:hover {
+    background-color: #F96B5B !important;
+}
+
+.equal-button2:hover {
+    background-color: #FF8A38 !important;
+}
+
+.equal-button3:hover {
+    background-color: #93FFF8 !important;
+}
+
+
+@media only screen and (min-width: 60rem) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header {
+        max-width: 53.3rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .result, .result2, .result3, .container, .container2, .container3 {
+        max-width: 54rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .container, .container2, .container3 {
+        grid-template-columns: repeat(4, 10.1rem);
+        gap: 2.4rem;
+    }
+
+    .result, .result2, .result3 {
+        height: 12.8rem;
+        padding: 4rem 3.2rem;
+    }
+
+    .container button {
+        font-size: 4rem;
+    }
+
+    .container2 button {
+        font-size: 4rem;
+    }
+
+    .container3 button {
+        font-size: 4rem;
+    }
+
+    .delete-button, .reset-button, .equal-button, .delete-button2, .reset-button2, .equal-button2, .delete-button3, .reset-button3, .equal-button3 {
+        font-size: 2.8rem !important;
+    }
+
+    
+}
