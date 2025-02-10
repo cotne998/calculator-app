@@ -14,23 +14,32 @@ const dial = document.querySelectorAll(".dial");
 
 
 buttons.forEach((button) => {
-
     button.addEventListener('click', () => {
         const value = button.textContent;
+        const lastChar = result.textContent.slice(-1); 
+        
+        const operators = ["+", "-", "*", "/"];
 
-        if(value === "=") {
-            result.textContent = eval(result.textContent)
+        if (value === "=") {
+            result.textContent = eval(result.textContent);
         } else if (value === "RESET") {
-            result.textContent = ""
+            result.textContent = "";
         } else if (value === "DEL") {
-           result.textContent = result.textContent.slice(0, -1)
+            result.textContent = result.textContent.slice(0, -1);
         } else if (value === "x") {
-            result.textContent += "*";
+            if (!operators.includes(lastChar)) {
+                result.textContent += "*";
+            }
+        } else if (operators.includes(value)) {
+            if (!operators.includes(lastChar) && result.textContent.length > 0) {
+                result.textContent += value;
+            }
         } else {
             result.textContent += value;
         }
-    })
-})
+    });
+});
+
 
 
 rectangle.addEventListener('click', () => {
